@@ -1,0 +1,35 @@
+<div class="container pt-4">
+
+    <form>
+        <div class="form-group">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" class="form-control" name="nome" id="nome" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" name="email" id="email" required>
+        </div>
+
+        <div>
+            <label for="senha">Senha:</label>
+            <input type="password" class="form-control" name="senha" id="senha" required>
+        </div>
+
+        <div class="form-group mt-3">
+            <label for="tipo">Selecione o tipo do cadastro:</label>
+            <select class="form-control" name="tipo" id="tipo">
+                <option selected>Escolher...</option>
+                <option value="1">Professor</option>
+                <option value="2">Aluno</option>
+            </select>
+        </div>
+                
+        <div class="mt-3">
+            <button type="submit" class="btn btn-primary" (click)="cadastrarUsuario()">Salvar</button>
+            <a href="#" class="btn btn-outline-danger ml-2">Cancelar</a>
+            <button type="reset" class="btn btn-outline-secondary ml-2">Limpar</button>
+        </div>
+    </form>
+
+</div>
